@@ -1,0 +1,16 @@
+root {
+  --branco_principal: #FFFFFF;
+}
+
+.container {
+    padding: 0.5em 0.5em;
+}
+
+.flexExpand {
+    flex: 1 1 auto;
+}
+
+.main-logo {
+    text-decoration: none;
+    color: var(--branco_principal);
+}
