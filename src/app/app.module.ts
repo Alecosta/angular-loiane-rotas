@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    CursosComponent
+    CursosComponent,
+    CursoDetalheComponent
   ],
   imports: [
     BrowserModule,

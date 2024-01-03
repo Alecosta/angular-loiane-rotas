@@ -2,16 +2,22 @@
   <mat-toolbar color="primary" fxShow="true" fxHide.lt-md fxFlex fxLayout>
     <mat-toolbar-row>
      <div >
-          <a mat-button [routerLink]="'/cursos'"> Cursos</a>
-          <a mat-button [routerLink]="'/login'">Login</a>
+          <a mat-button [routerLink]="'/login'" >Login</a>
+          <a mat-button [routerLink]="'/cursos'" >Cursos</a>
+          <a mat-button [routerLink]="['/curso',idCurso.value]" >Curso com ID</a>
         </div>
         <span class="flexExpand"></span>
         <div >
-          <!--a fxFlex mat-button [routerLink]="''"> Rotas Ng2 </a-->
-          <a class='main-logo' [routerLink]="''">Rotas Ng2</a>
+          <a class='main-logo' [routerLink]="''">Rotas Ng2+</a>
         </div>
       </mat-toolbar-row>
     </mat-toolbar>
   
 </div>
-<router-outlet></router-outlet>
+
+<div class="container">
+  <p>Entre com o Id do Curso:</p>
+  <input #idCurso>
+  <router-outlet></router-outlet>
+
+</div>
