@@ -12,9 +12,10 @@ import { CursosService } from "./cursos.service";
     ],
     exports:[],
     declarations:[
-        CursosComponent,
-        CursoDetalheComponent,
-        CursoNaoEncontradoComponent],
+//        CursosComponent,
+//        CursoDetalheComponent,
+//        CursoNaoEncontradoComponent
+],
     providers:[
         CursosService
     ],

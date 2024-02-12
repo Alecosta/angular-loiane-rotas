@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { CursosService } from './cursos.service';
-import { RouterTestingHarness } from '@angular/router/testing';
+//import { RouterTestingHarness } from '@angular/router/testing';
 import { Subscriber, Subscription } from 'rxjs';
 
 
