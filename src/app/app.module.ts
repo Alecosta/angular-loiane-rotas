@@ -14,26 +14,29 @@ import { AppRoutingModule } from './app-routing.module';
 import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 import { CursosService } from './cursos/cursos.service';
 import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
+import { CursosModule } from './cursos/cursos.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,
-    CursosComponent,
-    CursoDetalheComponent,
-    CursoNaoEncontradoComponent
+    LoginComponent//,
+    //CursosComponent,
+    //CursoDetalheComponent,
+    //CursoNaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    CursosModule,
+    AppRoutingModule
   ],
-  providers: [CursosService],
+  //providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
