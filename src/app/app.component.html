@@ -4,7 +4,7 @@
      <div >
           <a mat-button routerLink="/login" >Login</a>
           <a mat-button routerLink="/cursos" [queryParams]="{pagina:1}">Cursos</a> 
-          <a mat-button [routerLink]="['curso',idCurso.value]" >Curso com ID</a>
+          <!-- <a mat-button [routerLink]="['curso',idCurso.value]" >Curso com ID</a-->
           <a mat-button routerLink="/alunos" >Alunos</a> 
         </div>
         <span class="flexExpand"></span>
@@ -17,8 +17,8 @@
 </div>
 
 <div class="container">
-  <p>Entre com o Id do Curso:</p>
-  <input #idCurso>
+  <!-- <p>Entre com o Id do Curso:</p>
+  <input #idCurso-->
   <router-outlet></router-outlet>
 
 </div>
