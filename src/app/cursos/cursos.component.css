@@ -1,0 +1,4 @@
+.mat-mdc-list-base {
+    display: block;
+    --mdc-list-list-item-hover-label-text-color: #f44336;
+}
