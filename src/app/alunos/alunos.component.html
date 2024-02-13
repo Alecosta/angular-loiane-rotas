@@ -1,2 +1,20 @@
-<p>alunos works!</p>
-<router-outlet></router-outlet>
+<div class="container">
+    <div class="coluna">
+        <p>
+            Lista de Alunos
+        </p>
+        <mat-list>
+
+            <a mat-list-item style="cursor: pointer"  role="listitem" *ngFor="let aluno of alunos" [routerLink]="[aluno.id]" routerLinkActive="router-link-active">{{aluno.nome}}</a>
+           <!--*ngFor="let aluno of alunos"
+            {{aluno.nome}}-->
+        
+        </mat-list>    </div>
+    <div class="coluna">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+
+
