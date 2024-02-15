@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { Subscription } from 'rxjs';
 import { AlunosService } from '../alunos.service';
@@ -11,11 +11,13 @@ import { AlunosService } from '../alunos.service';
 })
 export class AlunoDetalheComponent implements OnInit, OnDestroy {
 
+
   aluno: any;
   inscricao: Subscription | undefined;
 
   constructor (
     private route: ActivatedRoute,
+    private router: Router,
     private alunosService: AlunosService
   ) { }
 
@@ -28,6 +30,10 @@ export class AlunoDetalheComponent implements OnInit, OnDestroy {
     )
   }
 
+  editarContato() {
+    this.router.navigate(['/alunos', this.aluno.id, 'editar']);  
+    //alert('Edição de Contato');
+  }
   ngOnDestroy() {
     this.inscricao?.unsubscribe();
   }

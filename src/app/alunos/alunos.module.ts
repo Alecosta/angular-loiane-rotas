@@ -9,13 +9,22 @@ import { AlunosService } from './alunos.service';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
     imports: [
         CommonModule,
+        FormsModule,
         MatToolbarModule,
         MatButtonModule,
         MatListModule,
+        MatFormFieldModule, 
+        MatInputModule, 
+        MatSelectModule,
         AlunosRoutingModule
     ],
     exports: [],
