@@ -11,6 +11,7 @@ import { CursoNaoEncontradoComponent } from "./curso-nao-encontrado/curso-nao-en
 import { CursosService } from "./cursos.service";
 import { CursosRoutingModule } from "./cursos.routing.module";
 
+
 @NgModule({
     imports:[
         CommonModule,

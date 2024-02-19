@@ -15,7 +15,9 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 //import { CursosModule } from './cursos/cursos.module';
 import { AlunosModule } from './alunos/alunos.module';
-
+import {MatIconModule} from '@angular/material/icon';
+import { AuthService } from './login/auth.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -34,11 +36,12 @@ import { AlunosModule } from './alunos/alunos.module';
     MatFormFieldModule, 
     MatInputModule, 
     MatSelectModule,
+    MatIconModule,
   //  CursosModule,
     AlunosModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
-  //providers: [CursosService],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

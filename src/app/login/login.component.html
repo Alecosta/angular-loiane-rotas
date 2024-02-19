@@ -1,1 +1,25 @@
-<p>login works!</p>
+<h5>
+    Login
+</h5>
+
+<div class="example-form">
+<mat-form-field class="example-full-width">
+    <mat-label>Usuário</mat-label>
+    <input matInput [(ngModel)]="usuario.nome" id="usuario" type="text" placeholder="Preencha com o nome do usuário" value="">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Senha</mat-label>
+    <input matInput matInput [(ngModel)]="usuario.senha"  id="senha" type ="password" placeholder="Preencha com a senha do usuário" value="">
+  </mat-form-field>
+
+<button mat-raised-button color="primary" class="example-button" type="submit" name="action" (click)="fazerLogin()">
+  <span class="content">
+    <span class="text">LOGIN</span>
+    <span class="icon"><mat-icon>send</mat-icon></span>
+  </span>
+</button>
+
+  
+
+</div>
+
