@@ -18,6 +18,7 @@ import { AlunosModule } from './alunos/alunos.module';
 import {MatIconModule} from '@angular/material/icon';
 import { AuthService } from './login/auth.service';
 import { FormsModule } from '@angular/forms';
+import { AuthGuard } from './guards/auth.guard';
 
 
 @NgModule({
@@ -41,7 +42,7 @@ import { FormsModule } from '@angular/forms';
     AlunosModule,
     AppRoutingModule,FormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
