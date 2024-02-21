@@ -8,7 +8,6 @@ export class CursosGuard implements CanActivateChild {
         route: ActivatedRouteSnapshot,
         state: RouterStateSnapshot
     ): Observable<boolean> | boolean {
-        console.log('Guarda de rota filha');
         return true;
     }
 }
