@@ -2,7 +2,7 @@
 <p>Página: {{ pagina }}</p>
 
 <mat-list role="list" [style.background]="'lightgray'" >
-  <a mat-list-item style="cursor: pointer"  role="listitem" *ngFor="let curso of cursos" [routerLink]="['/curso',curso.id]" routerLinkActive="router-link-active">{{curso.nome}}</a>
+  <a mat-list-item style="cursor: pointer"  role="listitem" *ngFor="let curso of cursos" [routerLink]="['/cursos',curso.id]" routerLinkActive="router-link-active">{{curso.nome}}</a>
 
 </mat-list>
 
