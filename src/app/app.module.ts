@@ -14,7 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 //import { CursosModule } from './cursos/cursos.module';
-import { AlunosModule } from './alunos/alunos.module';
+//import { AlunosModule } from './alunos/alunos.module';
 import {MatIconModule} from '@angular/material/icon';
 import { AuthService } from './login/auth.service';
 import { FormsModule } from '@angular/forms';
@@ -41,7 +41,7 @@ import { AlunosGuard } from './guards/alunos.guard';
     MatSelectModule,
     MatIconModule,
   //  CursosModule,
-    AlunosModule,
+  //  AlunosModule,
     AppRoutingModule,FormsModule
   ],
   providers: [
