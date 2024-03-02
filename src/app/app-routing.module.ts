@@ -9,6 +9,7 @@ import { AlunosGuard } from './guards/alunos.guard';
 //import { CursosComponent } from './cursos/cursos.component';
 //import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 const routes: Routes = [
   {path: 'cursos',
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path: 'login',component: LoginComponent},
   //{path: 'naoEncontrado',component: CursoNaoEncontradoComponent,canActivate: [AuthGuard]},
   {path: '',component: HomeComponent,
-  canActivate: [AuthGuard]}
+  canActivate: [AuthGuard]},
+  {path: '**',component : PaginaNaoEncontradaComponent}
 ];
 
 @NgModule({
